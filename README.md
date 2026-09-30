@@ -70,7 +70,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Evaluation & Benchmarking](categories/evaluation-benchmarking.md) — 33 entries
 - [Calibration & Research](categories/calibration-research.md) — 43 entries
 - [Infra / SDKs / Integrations](categories/infra-sdks-integrations.md) — 94 entries
-- [Game & Simulation](categories/game-simulation.md) — 23 entries
+- [Game & Simulation](categories/game-simulation.md) — 24 entries
 - [Robotics & Physical](categories/robotics-physical.md) — 9 entries
 - [Finance & Trading](categories/finance-trading.md) — 8 entries
 - [Compliance & Legal](categories/compliance-legal.md) — 2 entries
@@ -566,6 +566,7 @@ Source file: [`categories/game-simulation.md`](categories/game-simulation.md)
 - [Jev Driver](https://github.com/reinhard-z/vision-jev) ![stars](https://img.shields.io/github/stars/reinhard-z/vision-jev?style=flat-square&label=%E2%98%85) - Simulation: a top-down driving game where Florence-2 captions each image dropped on the road in the browser and a Cloudflare Worker asks Jev three `Choice` questions (action, category, speed limit) about the caption and its lane or sidewalk, with no rule table overriding the answer; live at drive.mrza.ch, about 330 ms median and $0.00004 per decision.
 - [jev-goal-reflex](https://github.com/blakeandrewwood/jev-goal-reflex) ![stars](https://img.shields.io/github/stars/blakeandrewwood/jev-goal-reflex?style=flat-square&label=%E2%98%85) - Simulation: a Three.js box steered by plain-language instructions, where an LLM turns each instruction into steps of simultaneous actions and every decision asks Jev two `Score` questions (move, turn) and one `Noul` (jump), with code acting on a score only past a 0.33 dead zone, jumping above 0.45, holding still any axis the current step does not use, and sending no Jev request while no step is active.
 - [Pacman AI Race](https://github.com/MaryNfs/pacman-ai-race) ![stars](https://img.shields.io/github/stars/MaryNfs/pacman-ai-race?style=flat-square&label=%E2%98%85) - Gaming: browser-based Pac-Man race where deterministic three-junction simulation removes routes predicted to be fatal when a survivor exists, then Jev makes one typed `Choice` among the remaining route IDs while the server rejects any answer outside the supplied set, with self-hosted Laya using the same decision contract for comparison.
+- [1 Million Emojis](https://chriswijnia.com/lab/emoji) - Collaborative art: a shared 1000 × 1000 emoji canvas where, after each visitor stroke, one Jev request asks a `Choice` over named (emoji, square) pairs next to it and a `Noul` on whether the stroke is an unfinished shape, finishing the loop or line above 0.7 and otherwise sampling its pick from the returned probabilities ([source](https://github.com/cwdx/1-million-emojis)).
 
 ### Robotics & Physical
 
